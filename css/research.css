@@ -1,0 +1,101 @@
+.research {
+    padding: 120px 0;
+    background-color: var(--background-color);
+}
+
+.research-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.research-item {
+    background-color: var(--background-color);
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 30px;
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+}
+
+.research-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: var(--font-serif);
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.research-item p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-family: var(--font-serif);
+}
+
+/* Current plans section */
+.current-plans {
+    padding: 120px 0;
+    background-color: var(--background-color);
+}
+
+.plans-content {
+    background-color: var(--background-color);
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: var(--transition);
+    margin-top: 60px;
+}
+
+.plans-content:hover {
+    transform: translateY(-5px);
+}
+
+.plans-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: var(--font-serif);
+    border-bottom: none;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.plans-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.plans-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.plans-content li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    position: relative;
+    padding-left: 25px;
+    font-family: var(--font-serif);
+}
+
+.plans-content li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--text-color);
+}
