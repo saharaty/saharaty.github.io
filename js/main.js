@@ -57,32 +57,47 @@ function populateProjectsData(data) {
     if (projectsGrid) {
         // Define project data with enhanced descriptions and images
         const projectsData = [
-            {
-                title: "Airflow Automation of ETL",
-                status: "(In Progress)",
-                description: "Created an Airflow DAG to automate the OpenAI ETL pipeline. Configured PythonOperator and scheduling to run workflows automatically. This project streamlines data processing and ensures consistent, reliable data flow for AI applications.",
-                tags: ["Airflow", "ETL", "Python", "Automation"]
-            },
-            {
-                title: "OpenAI API ETL Pipeline",
-                description: "Built an ETL pipeline in Python to collect, transform, and store OpenAI prompt-response pairs. Used '.env' and pandas for secure and structured data handling. Saved outputs to CSV for further NLP analysis. GitHub repo available with complete documentation.",
-                tags: ["OpenAI", "ETL", "Python", "NLP"]
-            },
-            {
-                title: "Municipality Call Center BI Dashboard",
-                description: "Processed 100K+ records with ETL pipelines and real-time analytics. Developed interactive visualizations, improving data-driven decision-making by 30%. Implemented custom KPIs and metrics to track call center performance and customer satisfaction.",
-                tags: ["Dashboard", "BI", "ETL", "Analytics"]
-            },
-            {
-                title: "Marketing Analytics Data Engineering",
-                description: "Built ETL workflows and dashboards to analyze customer behavior patterns. Implemented data transformations for business intelligence insights. Created predictive models to forecast customer engagement and optimize marketing campaigns.",
-                tags: ["Analytics", "ETL", "Marketing", "Data Engineering"]
-            },
-            {
-                title: "Parallel Mandelbrot Set Optimization",
-                description: "Accelerated fractal computations using parallel processing techniques. Improved execution speed by 75% with CUDA-based optimizations. Implemented advanced visualization techniques to render high-resolution fractal images with dynamic color mapping.",
-                tags: ["HPC", "CUDA", "Parallel Computing", "Visualization"]
-            }
+{
+    title: "Real-time News Aggregation & Sentiment Analysis Pipeline",
+    status: "(In Progress)",
+    description: "Building a multi-source data pipeline combining Kafka, Airflow, and AWS to ingest, process, and analyze live news and social media data. Applying NLP techniques for sentiment analysis and named entity recognition to extract insights from unstructured text.",
+    tags: ["Kafka", "Airflow", "AWS", "NLP", "Data Engineering", "Streaming"]
+},
+{
+    title: "OpenAI API ETL Pipeline",
+    description: "Engineered a Python ETL pipeline to extract, transform, and store OpenAI prompt-response pairs for NLP analysis. Integrated dotenv and pandas for secure, structured data handling.",
+    tags: ["Python", "OpenAI API", "ETL", "NLP"]
+},
+{
+    title: "Municipality Call Center BI Dashboard",
+    description: "Built an interactive Power BI dashboard from 100K+ municipal call records. Applied ETL pipelines and custom KPIs, improving decision-making efficiency by 30%.",
+    tags: ["Power BI", "ETL", "SQL", "Data Visualization"]
+},
+{
+    title: "D3.js Data Visualization Library",
+    description: "Developed interactive web-based visualizations (bar charts, scatter plots, pie charts) using D3.js. Enhanced storytelling with data through custom visual designs.",
+    tags: ["D3.js", "Data Visualization", "JavaScript", "Frontend"]
+},        
+{
+    title: "Fetal Plane Classification with Deep Learning",
+    description: "Trained CNN and EfficientNet models on 10K+ ultrasound images to classify fetal planes. Achieved 83% accuracy, applied Grad-CAM for model interpretability.",
+    tags: ["Deep Learning", "PyTorch", "Computer Vision", "NLP"]
+},
+{
+    title: "Breast Cancer Detection with ML",
+    description: "Developed a Scikit-learn classification model for early cancer detection from biopsy features. Achieved 96% accuracy, presented findings in an academic seminar.",
+    tags: ["Machine Learning", "Scikit-learn", "Data Science", "Healthcare"]
+},
+{
+    title: "Fine-tuning BERT for NLP Tasks",
+    description: "Fine-tuned the BERT transformer model on domain-specific datasets to improve text classification accuracy. Explored transfer learning in NLP workflows.",
+    tags: ["NLP", "BERT", "Transformers", "Deep Learning"]
+},
+{
+    title: "Parallel Mandelbrot Set Optimization",
+    description: "Accelerated fractal rendering by 8x using parallel computing (CUDA, OpenMP, MPI). Optimized execution on multi-core systems for high-resolution visualizations.",
+    tags: ["HPC", "CUDA", "Parallel Computing", "Optimization"]
+}
         ];
         
         // Create project cards
