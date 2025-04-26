@@ -56,34 +56,35 @@ function populateProjectsData(data) {
     const projectsGrid = document.querySelector('.projects-grid');
     if (projectsGrid) {
         // Define project data with enhanced descriptions and images
-        const projectsData = [
-            {
-                title: "Airflow Automation of ETL",
-                status: "(In Progress)",
-                description: "Created an Airflow DAG to automate the OpenAI ETL pipeline. Configured PythonOperator and scheduling to run workflows automatically. This project streamlines data processing and ensures consistent, reliable data flow for AI applications.",
-                tags: ["Airflow", "ETL", "Python", "Automation"]
-            },
-            {
-                title: "OpenAI API ETL Pipeline",
-                description: "Built an ETL pipeline in Python to collect, transform, and store OpenAI prompt-response pairs. Used '.env' and pandas for secure and structured data handling. Saved outputs to CSV for further NLP analysis. GitHub repo available with complete documentation.",
-                tags: ["OpenAI", "ETL", "Python", "NLP"]
-            },
-            {
-                title: "Municipality Call Center BI Dashboard",
-                description: "Processed 100K+ records with ETL pipelines and real-time analytics. Developed interactive visualizations, improving data-driven decision-making by 30%. Implemented custom KPIs and metrics to track call center performance and customer satisfaction.",
-                tags: ["Dashboard", "BI", "ETL", "Analytics"]
-            },
-            {
-                title: "Marketing Analytics Data Engineering",
-                description: "Built ETL workflows and dashboards to analyze customer behavior patterns. Implemented data transformations for business intelligence insights. Created predictive models to forecast customer engagement and optimize marketing campaigns.",
-                tags: ["Analytics", "ETL", "Marketing", "Data Engineering"]
-            },
-            {
-                title: "Parallel Mandelbrot Set Optimization",
-                description: "Accelerated fractal computations using parallel processing techniques. Improved execution speed by 75% with CUDA-based optimizations. Implemented advanced visualization techniques to render high-resolution fractal images with dynamic color mapping.",
-                tags: ["HPC", "CUDA", "Parallel Computing", "Visualization"]
-            }
-        ];
+const projectsData = [
+  {
+    title: "Airflow Automation of ETL",
+    status: "(In Progress)",
+    description: "Automated OpenAI ETL pipeline with Airflow DAGs, PythonOperator, and scheduling to ensure consistent data flow for AI applications.",
+    tags: ["Airflow", "ETL", "Python", "Automation"]
+  },
+  {
+    title: "OpenAI API ETL Pipeline",
+    description: "Built an ETL pipeline in Python for OpenAI prompt-response pairs. Used dotenv and pandas for structured data handling, stored outputs for NLP analysis.",
+    tags: ["OpenAI", "ETL", "Python", "NLP"]
+  },
+  {
+    title: "Municipality Call Center BI Dashboard",
+    description: "Processed 100K+ records, developed Power BI dashboards with KPIs to improve decision-making by 30%. Applied ETL and real-time analytics.",
+    tags: ["Dashboard", "BI", "ETL", "Analytics"]
+  },
+  {
+    title: "Marketing Analytics Data Engineering",
+    description: "Built ETL workflows and dashboards to analyze customer behavior, created predictive models to optimize marketing campaigns.",
+    tags: ["Analytics", "ETL", "Marketing", "Data Engineering"]
+  },
+  {
+    title: "Parallel Mandelbrot Set Optimization",
+    description: "Accelerated fractal computations with CUDA-based parallel processing. Improved performance by 75% and visualized high-res fractals.",
+    tags: ["HPC", "CUDA", "Parallel Computing", "Visualization"]
+  }
+];
+
         
         // Create project cards
         projectsData.forEach(project => {
