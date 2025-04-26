@@ -103,6 +103,7 @@ function populateProjectsData(data) {
                     <div class="project-tags">
                         ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
                     </div>
+                        <a href="${project.link}" class="read-more-btn">Read More →</a>
                 </div>
             `;
             
