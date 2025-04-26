@@ -77,7 +77,7 @@ function populateProjectsData(data) {
     link: "call-center-bi-dashboard.html"
 },
 {
-    title: "D3.js Data Visualization",
+    title: "Life Expectancy Visualisation",
     description: "Developed interactive web-based visualizations (bar charts, scatter plots, pie charts) using D3.js. Enhanced storytelling with data through custom visual designs.",
     tags: ["D3.js", "Data Visualization", "JavaScript", "Frontend"],
     link: "data-viz.html"
