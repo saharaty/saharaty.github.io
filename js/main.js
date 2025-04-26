@@ -111,46 +111,5 @@ function populateProjectsData(data) {
     }
 
 
-
-
-
-
-
-
-
-
-
-function populateProjectsData() {
-  const projectsGrid = document.querySelector('.projects-grid');
-  const projectsData = [ /* your projects */ ];
-
-  projectsData.forEach(project => {
-    const projectCard = document.createElement('div');
-    projectCard.className = 'project-card';
-
-    const imageHTML = `<div class="project-img-placeholder"><i class="fas fa-code"></i></div>`;
-
-    projectCard.innerHTML = `
-      ${imageHTML}
-      <div class="project-info">
-        <h3>${project.title} ${project.status || ''}</h3>
-        <p>${project.description}</p>
-        <div class="project-tags">
-          ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
-        </div>
-      </div>
-    `;
-
-    projectsGrid.appendChild(projectCard);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  // other event listeners...
-
-  populateProjectsData(); 
-});
-
-
     
 }
