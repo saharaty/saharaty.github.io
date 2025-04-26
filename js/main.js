@@ -50,9 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to populate projects section
 function populateProjectsData(data) {
-    // Using the second resume file as it appears more recent and complete
-    const resumeData = data["Sahar Harati.pdf"];
-    
+    // Using the second resume file as it appears more recent and complete    
     const projectsGrid = document.querySelector('.projects-grid');
     if (projectsGrid) {
         // Define project data with enhanced descriptions and images
