@@ -74,7 +74,7 @@ function populateProjectsData(data) {
     tags: ["Power BI", "ETL", "SQL", "Data Visualization"]
 },
 {
-    title: "D3.js Data Visualization Library",
+    title: "D3.js Data Visualization",
     description: "Developed interactive web-based visualizations (bar charts, scatter plots, pie charts) using D3.js. Enhanced storytelling with data through custom visual designs.",
     tags: ["D3.js", "Data Visualization", "JavaScript", "Frontend"]
 },        
