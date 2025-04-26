@@ -109,6 +109,12 @@ const projectsData = [
         });
     }
 
+    
+document.addEventListener('DOMContentLoaded', function() {
+  // other code...
+  populateProjectsData();
+});
+
 
     
 }
